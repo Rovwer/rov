@@ -1,0 +1,478 @@
+
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #01070d;
+   text-align: left;
+   background-color: #fff;
+}
+.boot {
+   margin-top: 80px;
+}
+.golovna {
+   position: fixed;
+   background-color: #ffa501;
+   width: 110px;
+   height: 25px;
+   border-radius: 40%;
+   margin: -40px 0 0 10%;
+}
+.golovna a{
+   font-size: 14px;
+   color: rgb(16, 45, 235);
+   margin: -40px 0 0 10%;
+}
+.title {
+   font-weight: bold;
+   font-size: 36px;
+   line-height: 60px;
+ }
+ .title_fz16 {
+   font-size: 16px;
+   line-height: 24px;
+ }
+ .title_fz36 {
+   font-size: 36px;
+ }
+ .title__section-title {
+   position: relative;
+   text-align: center;
+ }
+ .title__section-title:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: -25%;
+   left: 0;
+   width: 36px;
+   height: 36px;
+   border-radius: 100%;
+   background: #ffa501;
+ }
+ .title__section-title:before {
+   top: -6px;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+ }
+ .title__section-subtitle {
+   text-align: center;
+ }
+#container {
+   max-width: 920px;
+   margin: 0 auto;
+   max-height: 100%;
+}
+.block{
+   border: 2px solid black;
+   border-radius:10px;
+   width: 100%;
+   max-width: 954px;
+   height: auto;
+   position: relative;
+   overflow: hidden;
+   margin: 0;
+}
+.jumbotron {
+   font-size: 20px;
+   color: rgb(13, 41, 126);
+   text-align: center;
+}
+h2 {
+ font-size: calc(1.325rem + 0.1vw);
+}
+p {
+   font-size: 14px;
+}
+.block p {
+   font-size: 14px;
+}
+img {
+   width: 100%;
+   margin: 1% 0 1% 0;
+}
+.row {
+   width: 100%;
+   margin-top: 0px;
+   margin-left: calc(var(--bs-gutter-x)/ -18);
+}
+.img-scale {
+   display: inline-block; 
+   overflow: hidden; 
+}
+.img-scale img {
+   transition: 1s; 
+   display: block; 
+}
+.img-scale img:hover {
+   transform: scale(1.5); 
+}
+.thumbnail {
+   margin-left: 1%;
+   margin-right: 1%;
+}
+.thumbnail {
+   top: 0;
+   left: -100%;
+   width: 100%;
+   height: 55vh;
+   z-index: 10;
+   opacity: 1;
+   -webkit-transition: all 0.6s;
+   transition: all 0.6s;
+}
+.thumbnail__close {
+   position: absolute;
+   top: 25px;
+   right: 25px;
+   cursor: pointer;
+   color: rgb(216, 238, 16);
+   background-color: #ffa501;
+}
+.thumbnail__overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: 0.75;
+}
+.thumbnail.active {
+   left: 0;
+   visibility: visible;
+   opacity: 1;
+}
+.thumbnail__overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: #fff;
+   opacity: 0.75;
+}
+a:active, a:hover {
+   outline: 0;
+}
+.thumbnail a {
+   cursor: pointer;
+   pointer-events: all;
+   transition: color .3s;
+}
+.thumbnail a:hover {
+   color: #000;
+}
+.caption {
+   width: 100%;
+}
+.caption p {
+   font-size: 14px;
+}
+#myImg1 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+#myImg2 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+#myImg3 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+ #myImg4 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+#myImg5 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+#myImg6 {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+}
+ 
+#myImg:hover {opacity: 0.7;}
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 4;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+}
+.close-1 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close-1:hover,
+.close-1:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+.close-2 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close-2:hover,
+.close-2:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+.close-3 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close-3:hover,
+.close-3:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+.close-4 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close-4:hover,
+.close-4:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+.close-5 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+.close-5:hover,
+.close-5:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+   }
+.close-6 {
+   position: absolute;
+   top: 15px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+} 
+.close-6:hover,
+.close-6:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   padding-top: 100px;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto; 
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.9);
+   }
+.modal-content {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+}
+.modal-content, #caption {
+   -webkit-animation-name: zoom;
+   -webkit-animation-duration: 0.6s;
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+img {
+   vertical-align: middle;
+}
+#caption-1 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+   }
+#caption-2 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+#caption-3 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+#caption-4 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+#caption-5 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+#caption-6 {
+   margin: auto;
+   display: block;
+   width: 80%;
+   max-width: 700px;
+   text-align: center;
+   color: #ccc;
+   padding: 10px 0;
+   height: 150px;
+}
+.caption {
+      width: 100%;
+}
+.thumbnail {
+   top: 0;
+   width: 100%;
+   height: 100%;
+   z-index: 10;
+   opacity: 1;
+   -webkit-transition: all 0.6s;
+   transition: all 0.6s;
+}
+.thumbnail img {
+   border-color: #000;
+   border-radius: 0 0 0 0;
+   border-style: solid;
+   border-width: 5px;
+}
+img {
+   vertical-align: middle;
+   border-style: none;
+}
+.modal-content, #caption {  
+   animation-name: zoom;
+   animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+   from {transform: scale(0.1)} 
+   to {transform: scale(1)}
+}
+@media only screen and (max-width: 576px){
+   .modal-content {
+   width: 100%;
+   }
+} 
+
+@media (min-width: 1200px) {
+   .container{
+      max-width: 950px;
+      margin: 0 auto;
+      max-height: 100%;
+   }
+}
+@media (max-width: 992px) {
+   .caption p {
+      font-size: 12px;
+   }
+   .block p {
+      font-size: 12px;
+   }
+   p {
+      font-size: 12px;
+   }
+}
+@media (max-width: 768px) {
+   p {
+      font-size: 10px;
+   }
+}
+@media (max-width: 576px) {
+   p {
+      font-size: 12px;
+   }
+}
+@media (max-width: 450px) {
+   .caption p {
+      font-size: 10px;
+   }
+   .block p {
+      font-size: 10px;
+   }
+   p {
+      font-size: 10px;
+   }
+   h2 {
+      font-size: 16px;
+   }
+}

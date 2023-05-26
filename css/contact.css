@@ -1,0 +1,285 @@
+body {
+   margin: 0;
+   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+     "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+   font-size: 1rem;
+   font-weight: 400;
+   line-height: 1.5;
+   color: #212529;
+   text-align: left;
+   background-color: #e7ecf0;
+   margin-top: 80px;
+   height: 30%;
+}
+ 
+.contacts {
+  padding-top: 0px;
+}
+
+.golovna {
+  position: fixed;
+  background-color: #ffa501;
+  width: 110px;
+  height: 30px;
+  border-radius: 40%;
+  margin: -5% 0 0 10%;
+}
+
+.golovna a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #102deb;
+  margin: 0 0 0 7%;
+}
+
+.divider-1 {
+  width: 60px;
+  height: 3px;
+  background-color: #ffa501;
+  margin: 25px auto 25px auto;
+}
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+.title-1 {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 60px;
+}
+
+.title-1 .title_fz14-1 {
+  font-size: 22px;
+  line-height: 107px;
+  color: #0f0fee;
+  margin-left: 11vw;
+  margin-top: -6vw;
+}
+
+.title-1 .title_fz16-1 {
+  font-size: 22px;
+  line-height: 24px;
+}
+
+.title-1 .title_fz36-2 {
+  font-size: 36px;
+}
+
+.title__section-title-1 {
+  position: relative;
+  text-align: center;
+}
+
+.title__section-title-1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 100%;
+  background: #ffa501;
+}
+
+.title__section-title-1:before {
+  top: 12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.title__section-subtitle-1 {
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+.image {
+  width: 28vw;
+}
+
+.im {
+  display: block;
+  width: 5vw;
+  height: 5vw;
+  background-color: #ffa501;
+}
+
+.about__skills-item-2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 28vw 48vw;
+  grid-template-columns: 28vw 48vw;
+  -webkit-column-gap: 30px;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.about__descr-1 {
+  padding-top: 30px;
+}
+
+.about__skills-circle-1 {
+  position: relative;
+  padding: 60px 0 0 30px;
+}
+
+.about__skills-circle-1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 2.6vw;
+  left: 0;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 100%;
+  background: #ffa501;
+}
+ 
+@media (max-width: 1440px) {
+  .about__descr-1 {
+    padding-top: 0px;
+  }
+  .title-1 .title_fz14-1 {
+    font-size: 20px;
+    line-height: 85px;
+  }
+}
+@media (max-width: 1200px) {
+  .about__skills-circle-1 {
+    padding: 50px 0 0 24px;
+  }
+  .title-1 .title_fz14-1 {
+    font-size: 16px;
+    line-height: 8vw;
+  }
+}
+@media (max-width: 992px) {
+  .about__skills-circle-1 {
+    padding: 4.5vw 0 0 2vw;
+  }
+  .title-1 .title_fz14-1 {
+    font-size: 13px;
+    line-height: 7vw;
+  }
+}
+@media (max-width: 768px) {
+  .title-1 {
+    font-size: 18px;
+    line-height: 60px;
+  }
+  .about__descr-1 {
+  padding-top: 15px;
+  margin-left: -2vw;
+  }
+  .about__skills-circle-1 {
+    padding: 4.5vw 0 0 2vw;
+  }
+  .about__skills-circle-1:before {
+    top: 3vw;
+    left: 0vw;
+  }
+  .about__descr {
+    margin-top: 5%;
+  }
+  .title-1 .title_fz14-1 {
+    font-size: 10px;
+    line-height: 56px;
+  }
+
+  .title_fz36-2 {
+    font-size: 28px;
+    margin: 6px 6px 6px 0px;
+  }
+}
+@media (max-width: 576px) {
+  .golovna {
+    width: 80px;
+    height: 25px;
+    margin: 0 0 0 10%;
+  }
+  .golovna a {
+    font-size: 12px;
+    line-height: 25px;
+    margin: 0 0 0 11%;
+  }
+  .about__skills-item-2 {
+    -ms-grid-columns: 80vw;
+    grid-template-columns: 80vw;
+  }
+  .about__skills-circle-1 {
+    padding: 3vw 0 0 2.1vw;
+  }
+  .about__skills-circle-1:before {
+    top: 1vw;
+    left: 0;
+    width: 13vw;
+    height: 13vw;
+  }
+  .image {
+  width: 50vw;
+  margin-left: 16vw;
+  }
+  .im {
+    width: 8vw;
+    height: 8vw;
+  }
+  .title-1 .title_fz14-1 {
+    font-size: 16px;
+    line-height: 95px;
+    margin: 3% 0 0 0%;
+  }
+  .title-1 .title_fz16-1 {
+    font-size: 14px;
+    line-height: 35px;
+  }
+}
+@media (max-width: 450px) {
+.im {
+  width: 8vw;
+  height: 8vw;
+}
+
+  .title-1 .title_fz14-1 {
+    font-size: 11px;
+    line-height: 20px;
+    margin: 10% 0 0 0%;
+  }
+
+  .title-1 .title_fz16-1 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+
+  .about__skills-circle-1 {
+    padding: 4vw 0 0 3vw;
+  }
+}
+@media (max-width: 320px) {
+  .about__skills-item-2 {
+    -ms-grid-columns: 229px;
+    grid-template-columns: 229px;
+  }
+
+  .title-1 .title_fz14-1 {
+    font-size: 10px;
+    line-height: 20px;
+    margin: 10% 0 0 0%;
+  }
+
+  .title-1 .title_fz16-1 {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .about__skills-circle-1 {
+    padding: 3.5vw 0 0 2.5vw;
+  }
+}

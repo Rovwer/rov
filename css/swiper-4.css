@@ -1,0 +1,132 @@
+html,
+body {
+   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+   font-size: 14px;
+   color: #000;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   height: 100%;
+   background-color: #7d7979;
+}
+.golovna {
+   position: fixed;
+   background-color: #ffa501;
+   width: 110px;
+   height: 25px;
+   border-radius: 40%;
+   margin: -40px 0 0 10%;
+}
+.golovna a{
+   font-size: 14px;
+   color: rgb(16, 45, 235);
+   margin: -40px 0 0 10%;
+}
+.title__section-title {
+   position: relative;
+   text-align: center;
+ }
+ .title_fz16 {
+   font-size: 28px;
+   line-height: 24px;
+ }
+ .title__section-title:before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: -25%;
+   left: 0;
+   width: 36px;
+   height: 36px;
+   border-radius: 100%;
+   background: #ffa501;
+   border: 1px solid #442e05;
+ }
+ .title__section-title:before {
+   top: -6px;
+   left: 50%;
+   -webkit-transform: translateX(-50%);
+   transform: translateX(-50%);
+ }
+ .title__section-subtitle {
+   text-align: center;
+ }
+.resume {
+   padding-top: 50px;
+}
+.swiper {
+   margin-top: 20px;
+   width: 840px;
+   height: 620px;
+}
+.swiper-slide {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 18px;
+   font-size: 22px;
+   font-weight: bold;
+   color: #fff;
+}
+.swiper-slide img{
+   width: 840px;
+   height: 620px;
+}
+
+@media (max-width: 992px) {
+   .swiper {
+      width: 580px;
+      height: 500px;
+   }
+   .swiper-slide img{
+      width: 580px;
+      height: 500px;
+   }
+} 
+@media (max-width: 768px) {
+   .swiper {
+      width: 430px;
+      height: 340px;
+   }
+   .swiper-slide{
+      width: 430px;
+      height: 340px;
+   }
+   .swiper-slide img{
+      width: 430px;
+      height: 340px;
+   }
+} 
+@media (max-width: 576px) {
+   .title_fz36 {
+      font-size: 20px;
+      line-height: 20px;
+   }
+   .swiper {
+      width: 400px;
+      height: 300px;
+      margin-top: -20px;
+   }
+   .swiper-slide {
+      width: 400px;
+      height: 300px;
+   }
+   .swiper-slide img{
+      width: 400px;
+      height: 300px;
+   }
+} 
+@media (max-width: 450px) {
+   .swiper {
+      width: 285px;
+      height: 200px;
+   }
+   .swiper-slide {
+      width: 285px;
+      height: 200px;
+   }
+   .swiper-slide img{
+      width: 285px;
+      height: 200px;
+   }
+} 
