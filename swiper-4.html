@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/swiper.css">
+  </head>
+
+  <body>
+    <div class="golovna" style="margin-top: 10px;"><a href="index.html">На головну</a></div>
+    <section class="resume">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Swiper-4</h2>
+        <div class="title title_fz36 title__section-subtitle">Мої побудови Swiper</div>
+        <div class="divider"></div>
+        <div class="swiper mySwiper-10">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper-10", {
+        effect: "cards",
+        grabCursor: true,
+      });
+    </script>
+  </body>
+</html>

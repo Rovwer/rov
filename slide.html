@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Slide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/slide-1.css"/>
+    <link rel="stylesheet" href="css/slide-2.css"/>
+  </head>
+
+  <body >
+    <div class="golovna"><a href="index.html">На головну</a></div>
+    <section class="resume">
+      <div class="container">
+          <h2 class="title title_fz16 title__section-title">Slide</h2>
+          <div class="title title_fz36 title__section-subtitle">Мої побудови Slide</div>
+          <div class="divider"></div>
+    
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/1.jpg" /></div>
+              <div class="swiper-slide"><img src="img/2.jpg" /></div>
+              <div class="swiper-slide"><img src="img/3.jpg" /></div>
+              <div class="swiper-slide"><img src="img/4.jpg" /></div>
+              <div class="swiper-slide"><img src="img/5.jpg" /></div>
+              <div class="swiper-slide"><img src="img/6.jpg" /></div>
+              <div class="swiper-slide"><img src="img/7.jpg" /></div>
+              <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          
+          <div class="menu" style="text-align: center;">
+            <div class="sp_links" id="sp_0">Слайдер №1</div>
+            <div class="sp_links" id="sp_1">Слайдер №2</div>
+            <div class="sp_links" id="sp_2">Слайдер №3</div>
+            <div class="sp_links" id="sp_2">Слайдер №4</div>
+            <div class="sp_links" id="sp_2">Слайдер №5</div>
+            </div>
+            
+            <div id="body">
+              <table style="margin: 20px auto;">
+              <tr>
+                  <td id="show_back">
+                    <img src="image/forward-50.png" />
+                  </td>
+                  <td id="slide_show"></td>
+                  <td id="show_forward">
+                    <img src="image/back-50.png" />
+                  </td>
+              </tr>
+              </table>
+        </div>
+      </div>
+    </section>
+   
+   <script src="js/jquery.min.js"></script>
+   
+   <script type="text/javascript">
+    $(document).ready(function(){
+       var time = 400;
+       var num = [0,0,0,0,0,0];
+       var imgs = [
+          ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg"],
+          ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg"],
+          ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg"],
+          ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg"],
+          ["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg","img/7.jpg","img/8.jpg"]
+       ];
+       
+       $('#show_back').click(function() { num[id]--; });
+       $('#show_forward').click(function() { num[id]++; });
+       
+       $('#show_back, #show_forward').click(function() {
+          if (num[id]<0) num[id]=imgs[id].length-1;
+          if (num[id]>=imgs[id].length) num[id]=0;
+       $('#img_show').fadeOut(time, function() {
+          $(this).attr('src', imgs[id][num[id]]).fadeIn(time);
+          });
+       });
+    
+       $('.sp_links').click(function() {
+          id = $(this).attr("id").substr(3);
+       
+       if ($(this).hasClass("selected")!=true) {
+          $('#body').fadeOut(time, function() {
+          $('#slide_show').html('<img src="'+imgs[id][num[id]]+'" alt="" id="img_show">');
+          }).fadeIn(time);
+       
+          $('.sp_links').removeClass('selected');
+          $(this).addClass('selected');
+       }
+       else {
+          $('.sp_links').removeClass('selected');
+          $('#body').fadeOut(time);
+       }
+       return false;
+       });
+    });
+    </script>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+      function myPlugin({ swiper, extendParams, on }) {
+        extendParams({
+          debugger: false,
+        });
+
+        on('init', () => {
+          if (!swiper.params.debugger) return;
+          console.log('init');
+        });
+        on('click', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('click');
+        });
+        on('tap', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('tap');
+        });
+        on('doubleTap', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('doubleTap');
+        });
+        on('sliderMove', (swiper, e) => {
+          if (!swiper.params.debugger) return;
+          console.log('sliderMove');
+        });
+        on('slideChange', () => {
+          if (!swiper.params.debugger) return;
+          console.log(
+            'slideChange',
+            swiper.previousIndex,
+            '->',
+            swiper.activeIndex
+          );
+        });
+        on('slideChangeTransitionStart', () => {
+          if (!swiper.params.debugger) return;
+          console.log('slideChangeTransitionStart');
+        });
+        on('slideChangeTransitionEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('slideChangeTransitionEnd');
+        });
+        on('transitionStart', () => {
+          if (!swiper.params.debugger) return;
+          console.log('transitionStart');
+        });
+        on('transitionEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('transitionEnd');
+        });
+        on('fromEdge', () => {
+          if (!swiper.params.debugger) return;
+          console.log('fromEdge');
+        });
+        on('reachBeginning', () => {
+          if (!swiper.params.debugger) return;
+          console.log('reachBeginning');
+        });
+        on('reachEnd', () => {
+          if (!swiper.params.debugger) return;
+          console.log('reachEnd');
+        });
+      }
+    </script>
+
+    <script>
+      var swiper = new Swiper('.swiper', {
+        modules: [myPlugin],
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        debugger: true,
+      });
+    </script>
+    
+  </body>
+</html>

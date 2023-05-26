@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <link rel="stylesheet" href="css/swiper.css">
+  </head>
+
+  <body>
+    <div class="golovna" style="margin-top: 10px;"><a href="index.html">На головну</a></div>
+    <section class="resume">
+      <div class="container">
+        <h2 class="title title_fz16 title__section-title">Swiper-5</h2>
+        <div class="title title_fz36 title__section-subtitle">Мої побудови Swiper</div>
+        <div class="divider"></div>
+        <div class="swiper mySwiper1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper5">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper mySwiper6">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/9.jpg" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper1", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -400],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper2", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-120%", 0, -500],
+          },
+          next: {
+            shadow: true,
+            translate: ["120%", 0, -500],
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper3", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-20%", 0, -1],
+          },
+          next: {
+            translate: ["100%", 0, 0],
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper4", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: [0, 0, -800],
+            rotate: [180, 0, 0],
+          },
+          next: {
+            shadow: true,
+            translate: [0, 0, -800],
+            rotate: [-180, 0, 0],
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper5", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            translate: ["-125%", 0, -800],
+            rotate: [0, 0, -90],
+          },
+          next: {
+            shadow: true,
+            translate: ["125%", 0, -800],
+            rotate: [0, 0, 90],
+          },
+        },
+      });
+      var swiper = new Swiper(".mySwiper6", {
+        grabCursor: true,
+        effect: "creative",
+        creativeEffect: {
+          prev: {
+            shadow: true,
+            origin: "left center",
+            translate: ["-5%", 0, -200],
+            rotate: [0, 100, 0],
+          },
+          next: {
+            origin: "right center",
+            translate: ["5%", 0, -200],
+            rotate: [0, -100, 0],
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
